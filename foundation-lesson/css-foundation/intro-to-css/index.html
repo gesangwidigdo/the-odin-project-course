@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Intro to CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>CSS Selectors</h1>
+
+        <h2>Universal Selectors - Applied into all elements</h2>
+        
+        <h2>Type Selector - Select all elements of the given elements type</h2>
+        <div>Hello, World!</div>
+        <div>Hello again!</div>
+        <p>Hi...</p>
+        <div>Okay, bye</div>
+
+        <h2>Class Selector - Select all elements of the given class</h2>
+        <div class="alert-text">This is div elements with "alert-text" class</div>
+
+        <h2>ID Selector - Each element only can has one unique ID and cannot used in another Element</h2>
+        <div id="title">My Awesome's 90's Page</div>
+
+        <div>
+            <div class="subsection header">Chaining Selectors - Latest Post</div>
+            <p class="subsection preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, dignissimos?</p>
+            <p class="subsection" id="preview">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, exercitationem?
+            </p>
+        </div>
+
+        <div class="ancestor">
+            <!-- A -->
+            <div class="contents">
+                <!-- B -->
+                <div class="contents">
+                    <!-- C -->
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <!-- D -->
+        </div>
+        <!-- The first two elements (B and C) will be selected if the CSS is ".ancestor .contents" -->
+    </body>
+</html>

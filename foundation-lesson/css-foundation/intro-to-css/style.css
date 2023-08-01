@@ -1,0 +1,84 @@
+/* Universal Selector - Using asterisk indicate it as universal */
+* {
+    color: purple;
+}
+
+/* Type selector - Select all elements of the given element type, in this case <div> element */
+div {
+    color: blue;
+}
+
+/* Class Selector - Select all elements of the given class, which is an attribute of html elements */
+.alert-text {
+    color: red;
+}
+/* Class Selector can be used in many elements */
+
+/* 
+    ID Selector - Similar to class selectors, but select elements of the given ID.
+
+    Each element only can has one ID and cannot be repeated on a single page (cannot be used on another elements) and 
+    should not contain any whitespace
+*/
+#title {
+    background-color: red;
+}
+
+/* THE GROUPING SELECTOR */
+.read {
+    color: white;
+    background-color: black;
+    /* several unique declarations */
+}
+
+.unread {
+    color: white;
+    background-color: black;
+    /* several unique declarations */
+}
+/* If we have some selector that contains same property:value like above but otherwise have several of their own
+    unique declaration, we can group these two selectors together as comma-separated list
+*/
+
+.read,
+.unread {
+    color: white;
+    background-color: black;
+}
+
+.read {
+    /* several unique declarations */
+}
+
+.unread {
+    /* several unique declarations */
+}
+
+/* 
+    Example above will have same result as first example. But the second example reduces the repetition of declarations
+    and make it easier to edit either the color or background-color for both classes at once
+*/
+
+
+/* 
+    We have two elements with the subsection class that have some sort of unique styles, in case we want to apply a separate rule
+    to the element that has header as a second class, we could chain both the class selectors together.
+*/
+.subsection.header { /* Select all elements that have both subsection and header class and there is no space between two class */
+    color: red; 
+}
+/* This can also be used to chain a class and an ID */
+.subsection#preview {
+    color: blue;
+}
+/* This chaining selector only apply to elements with same type selector and cannot be used for different type. For example div and p type selector */
+
+/* Descendant Combinator */
+/* This combinator represented by single space between two selectors. */
+/* 
+    This combinator will only cause elements that match the last selector to be selected if they also have an ancestor (parent grandparent, etc) 
+    that matches previous selector
+*/
+.ancestor .child { /* will only select .child if it is nested inside .ancestor */
+    /*  */
+}
