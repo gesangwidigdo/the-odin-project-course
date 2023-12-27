@@ -1,0 +1,61 @@
+body {
+    font-family: 'Righteous', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(21, 10, 88);
+}
+
+.title-section {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.title-section h1 {
+    margin-top: 0;
+}
+
+.img-container {
+    text-align: center;
+}
+.home-img {
+    width: 500px;
+}
+
+.home-title {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    padding: 16px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+.list-section {
+    width: 800px;
+    margin: 24px auto;
+}
+
+.list-section h2 {
+    margin-top: 0;
+}
+
+.list-section ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.list-item {
+    color: white;
+    text-decoration: none;
+}

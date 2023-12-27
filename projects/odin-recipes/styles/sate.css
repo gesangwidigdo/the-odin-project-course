@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Righteous', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(58, 3, 3);
+    color: white;
+    padding: 15px;
+}
+
+.title-container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.img-container {
+    margin: 20px;
+}
+
+.title {
+    background-color: darkred;
+    padding: 20px;
+    margin-top: 0;
+}
+
+img {
+    width: 500px;
+}
+
+.content {
+    width: 400px;
+    margin: 16px auto;
+}
+
+.content .ingredients li, .content .step li {
+    padding: 5px;
+}
+
+.content .title {
+    margin-top: 0;
+}
+
+.content ul li, .content ol li {
+    margin: 12px 0;
+}
+
+a.main-menu {
+    text-decoration: none;
+    color: white;
+    background-color: lightgreen;
+    color: darkblue;
+    padding: 5px;
+}
