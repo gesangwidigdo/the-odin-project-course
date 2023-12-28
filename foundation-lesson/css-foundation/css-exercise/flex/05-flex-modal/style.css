@@ -70,16 +70,13 @@ button.cancel {
     color: royalblue;
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header {
     font-size: 18px;
     font-weight: 800;
     margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .text {
