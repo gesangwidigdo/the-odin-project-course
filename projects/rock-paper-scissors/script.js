@@ -1,55 +1,73 @@
-function capitalizeString(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1)
-}
-
 function getComputerChoice() {
     let compChoiceVal = Math.floor(Math.random() * 9 + 1 );
     if (compChoiceVal === 1 || compChoiceVal === 4 || compChoiceVal === 7) {
-        return 'Rock';
+        return 'rock';
     } else if (compChoiceVal === 2 || compChoiceVal === 5 || compChoiceVal === 8) {
-        return 'Paper';
+        return 'paper';
     } else {
-        return 'Scissors';
+        return 'scissors';
     }
 }
 
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection !== 'Rock' && playerSelection !== 'Paper' && playerSelection !== 'Scissors') {
-        return 'INVALID INPUT';
-    }
-
     if (playerSelection === computerSelection) {
-        return 'Draw! ' + playerSelection + ' equals ' + computerSelection;
+        return 0;
     } else if (
-        playerSelection === 'Rock' && computerSelection === 'Paper' ||
-        playerSelection === 'Paper' && computerSelection === 'Scissors' ||
-        playerSelection === 'Scissors' && computerSelection === 'Rock'
+        playerSelection === 'rock' && computerSelection === 'paper' ||
+        playerSelection === 'paper' && computerSelection === 'scissors' ||
+        playerSelection === 'scissors' && computerSelection === 'rock'
     ) {
-        return 'You Lose! ' + computerSelection + ' beats ' + playerSelection;
+        return -1;
     } else {
-        return 'You Win! ' + playerSelection + ' beats ' + computerSelection;
+        return 1;
     }
 }
 
-function playGame() {
-    let round = 5;
-    while (round) {
-        let playerSelection = prompt('Select: Rock, Paper, Scissors');
-        playerSelection = capitalizeString(playerSelection);
+const choice = document.querySelector('.choice');
+const result = document.querySelector('.result');
+const round = document.querySelector('.round');
+const score = document.querySelector('.player-score');
+const compScore = document.querySelector('.computer-score');
+const finalResult = document.querySelector('.final-result');
 
-        const computerSelection = getComputerChoice();
-        let result = playRound(playerSelection, computerSelection); 
+let gameRound = 0;
+let playerScore = 0;
+let computerScore = 0;
 
-        round--;
-        
-        if (result === 'INVALID INPUT') {
-            console.log('INVALID RESULT');
-            round++;
-            continue;
-        }
+round.textContent = 'Round: ' + gameRound;
+score.textContent = 'Player Score: ' + playerScore;
+compScore.textContent = 'Computer Score: ' + computerScore;
 
-        console.log(result);
+choice.addEventListener('click', (event) => {
+    finalResult.textContent = '';
+    let playerSelection = event.target.id;
+    let computerSelection = getComputerChoice();
+
+    let gameResult = playRound(playerSelection, computerSelection);
+    
+    if (gameResult == 1) {
+        result.textContent = 'You Win! ' + playerSelection + ' beats ' + computerSelection;
+        playerScore++;
+    } else if (gameResult == -1) {
+        result.textContent = 'You Lose! ' + computerSelection + ' beats ' + playerSelection;
+        computerScore++;
+    } else {
+        result.textContent = 'Draw! ' + playerSelection + ' equals ' + computerSelection;
     }
-}
 
-playGame();
+    score.textContent = 'Player Score: ' + playerScore;
+    compScore.textContent = 'Computer Score: ' + computerScore;
+
+    gameRound++;
+    round.textContent = 'Round: ' + gameRound;
+
+    if (gameRound === 5) {
+        if (playerScore > computerScore) finalResult.textContent = 'Player Wins!'
+        else if (computerScore > playerScore) finalResult.textContent = 'Computer Wins!'
+        else if (computerScore === playerScore) finalResult.textContent = 'Tie!'
+
+        gameRound = 0;
+        playerScore = 0;
+        computerScore = 0;
+    }
+});
