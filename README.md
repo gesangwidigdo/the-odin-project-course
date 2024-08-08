@@ -6,3 +6,5 @@ My code from The Odin Project course
 [Landing Page](https://gesangwidigdo.github.io/the-odin-project-course/projects/landing-page/index.html)
 
 [Rock Paper Scissors](https://gesangwidigdo.github.io/the-odin-project-course/projects/rock-paper-scissors/index.html)
+
+[Etch-A-Sketch](https://gesangwidigdo.github.io/the-odin-project-course/projects/etch-a-sketch/index.html)
