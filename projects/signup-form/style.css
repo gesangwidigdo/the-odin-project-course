@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('./src/font/Norse-Bold.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.required {
+  color: red;
+  font-size: .8rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+
+.left-container {
+  position: relative;
+  height: 100vh;
+  width: 500px;
+  /* margin-right: 50px; */
+}
+
+.left-container .left-bg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.left-container .logo {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, .5);
+}
+
+.left-container .logo > img {
+  width: 100px;
+}
+
+.left-container .logo > h1 {
+  font-family: 'Norse Bold', sans-serif;
+  font-size: 72px;
+  color: white;
+  margin-left: 30px;
+}
+
+.credit {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit * {
+  color: white;
+  font-size: calc(12px + .2vw);
+}
+
+.right-container {
+  padding: 30px;
+  width: 800px;
+}
+
+.disclaimer {
+  margin-top: 60px;
+}
+
+.disclaimer p {
+  position: relative;
+  font-size: calc(1.2em + .1vw);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.right-container h2 {
+  margin-top: 70px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  /* margin-bottom: 10px; */
+  padding-bottom: 20px;
+}
+
+form .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'] {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #87849b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='tel']:focus {
+  outline: none;
+  border-bottom: 1px solid #130b4d;
+}
+
+input[type='text']:invalid,
+input[type='email']:invalid,
+input[type='password']:invalid,
+input[type='tel']:invalid {
+  border-bottom: 1px solid red;
+}
+
+.form-row button {
+  margin-top: 25px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 30px;
+  border: none;
+  background-color: #6521d0;
+  border-radius: 5px;
+  color: #efeded;
+}
+
+.form-row button:focus,
+.form-row button:hover,
+.form-row button:active {
+  box-shadow: 1px 0px 10px #130b4d;
+}
+
+.form-row button:focus {
+  outline: none;
+  background-color: #894ceb;
+}
+
+.form-row button:hover {
+  background-color: #7236d2;
+  cursor: pointer;
+}
+
+.form-row button:active {
+  background-color: #200b42;
+}

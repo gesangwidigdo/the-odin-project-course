@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-container">
+      <img src="./src/sidebar-img.jpg" alt="Sidebar Image" class="left-bg">
+      <div class="logo">
+        <img src="./src/odin-logo-lined.png" alt="Odin Logo Lined">
+        <h1>ODIN</h1>
+      </div>
+      <div class="credit">
+        <p>Photo by <a href="https://unsplash.com/@boliviainteligente?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">BoliviaInteligente</a> on <a href="https://unsplash.com/photos/background-pattern-bcbZYAAuqyQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="disclaimer">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to</p>
+      </div>
+      <h2>Let's do this!</h2>
+      <form action="" method="get">
+        <div class="form-row">
+          <div class="input-group">
+            <label for="first-name">First Name <span class="required">*</span></label>
+            <input type="text" name="first-name" id="first-name" required>
+          </div>
+  
+          <div class="input-group">
+            <label for="last-name">Last Name <span class="required">*</span></label>
+            <input type="text" name="last-name" id="last-name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" name="email" id="email" required>
+          </div>
+  
+          <div class="input-group">
+            <label for="phone-number">Phone Number <span class="required">*</span></label>
+            <input type="tel" name="phone-number" id="phone-number" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="input-group">
+            <label for="password">Password <span class="required">*</span></label>
+            <input type="password" name="password" id="password" required>
+          </div>
+  
+          <div class="input-group">
+            <label for="confirm-password">Confirm Password <span class="required">*</span></label>
+            <input type="password" name="confirm-password" id="confirm-password" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <button type="submit">Create Account</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
