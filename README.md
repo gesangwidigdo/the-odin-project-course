@@ -8,3 +8,5 @@ My code from The Odin Project course
 [Rock Paper Scissors](https://gesangwidigdo.github.io/the-odin-project-course/projects/rock-paper-scissors/index.html)
 
 [Etch-A-Sketch](https://gesangwidigdo.github.io/the-odin-project-course/projects/etch-a-sketch/index.html)
+
+[Calculator](https://gesangwidigdo.github.io/the-odin-project-course/projects/calculator/index.html)
