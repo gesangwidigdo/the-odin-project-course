@@ -1,0 +1,48 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 376px calc(3 * 376px);
+  grid-template-rows: 100px 100px 500px 100px;
+  gap: 15px;
+}
+
+.container > div {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.container > div > p {
+  text-align: left;
+  font-weight: 400;
+  font-size: .8em;
+}
+
+.header {
+  background-color: darkgreen;
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.sidebar {
+  background-color: blue;
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.navbar {
+  background-color: #3c01dd;
+}
+
+.article {
+  background-color: purple;
+}
+
+.footer {
+  background-color: darkgray;
+  grid-area: 4 / 1 / 5 / 3;
+}
