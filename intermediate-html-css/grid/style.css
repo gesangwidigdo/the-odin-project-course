@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(3, 1fr);
+  grid-auto-rows: 50px;
+  gap: 5px;
+}
+
+.container > div {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.grid-item {
+  background: lightblue;
+}
+
+.item1 {
+  grid-area: 1 / 1 / span 3 / 2;
+}
+.item2 {
+  grid-area: 1 / 3 / span 2 / 4;
+}
+.item3 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.item4 {
+  grid-area: 3 / 2 / 4 / span 2;
+}
+
+.item5 {
+  grid-area: 4 / 1 / 5 / 4;
+}
