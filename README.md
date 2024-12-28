@@ -10,3 +10,5 @@ My code from The Odin Project course
 [Etch-A-Sketch](https://gesangwidigdo.github.io/the-odin-project-course/projects/etch-a-sketch/index.html)
 
 [Calculator](https://gesangwidigdo.github.io/the-odin-project-course/projects/calculator/index.html)
+
+[Admin Dashboard](https://gesangwidigdo.github.io/the-odin-project-course/projects/admin-dashboard/index.html)
