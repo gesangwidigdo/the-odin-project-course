@@ -12,3 +12,5 @@ My code from The Odin Project course
 [Calculator](https://gesangwidigdo.github.io/the-odin-project-course/projects/calculator/index.html)
 
 [Admin Dashboard](https://gesangwidigdo.github.io/the-odin-project-course/projects/admin-dashboard/index.html)
+
+[Library](https://gesangwidigdo.github.io/the-odin-project-course/projects/library/index.html)
