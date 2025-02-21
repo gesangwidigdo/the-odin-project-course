@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+header {
+  text-align: center;
+}
+
+.title {
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.add-button {
+  background-color: #008cff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #0078ff;
+}
+
+.add-button:active {
+  background-color: #0054d2;
+}
+
+dialog {
+  margin: 200px auto;
+  border-radius: 10px;
+}
+
+.form-container {
+  padding: 20px;
+}
+
+.input-group {
+  margin: 10px 0;
+}
+
+.dialog-header {
+  text-align: center;
+  background-color: #1468e6;
+  padding: 10px 0;
+  color: rgb(231, 233, 231);
+  font-size: 1.3rem;
+}
+
+.dialog-header .close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+dialog .input-group {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-items: start;
+}
+
+dialog .input-group input[type="text"],
+dialog .input-group input[type="number"] {
+  padding: 5px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgb(185, 185, 185);
+  transition: border-bottom 0.3s ease;
+  width: 100%;
+  font-size: 1rem;
+}
+
+dialog .input-group input[type="text"]:focus,
+dialog .input-group input[type="number"]:focus {
+  outline: none;
+  border-bottom: 1px solid #1468e6;
+}
+
+dialog .input-group.checkbox {
+  margin: 20px 0;
+}
+
+dialog .input-group input[type="checkbox"] {
+  width: 20px;
+}
+
+dialog .input-group input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px #1468e6;
+}
+
+.submit-button {
+  text-align: center;
+}
+
+dialog button.submit {
+  padding: 5px 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #1468e6;
+  color: rgb(231, 233, 231);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+dialog button.submit:hover {
+  background-color: #0054d2;
+}
+
+dialog button.submit:active {
+  background-color: #0039a6;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.book-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin: 10px 20px;
+  min-width: 200px;
+}
+
+.card-header {
+  background-color: #008cff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body p {
+  margin: 10px 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-footer button {
+  padding: 5px 10px;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-footer .read-button {
+  background-color: #38f404;
+  color: #191919;
+}
+
+.card-footer .edit-button {
+  background-color: #c0f404;
+  color: #191919;
+}
+
+.card-footer .delete-button {
+  background-color: #ff0000;
+}
+
